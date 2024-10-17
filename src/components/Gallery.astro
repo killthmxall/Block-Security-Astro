@@ -1,0 +1,115 @@
+---
+import cloudinary from 'cloudinary-video-player';
+import "cloudinary-video-player/cld-video-player.min.css";
+---
+
+<!--------------------------------------SCRIPT----------------------------------------------->
+<script>
+    import Swiper from 'swiper';
+    import 'swiper/css';
+    import { Navigation } from "swiper/modules";
+    import "swiper/css/navigation";
+
+    import PhotoSwipeLightbox from 'photoswipe/lightbox';
+    import 'photoswipe/style.css'
+
+    // Configurar Photoswipe
+    const lightbox = new PhotoSwipeLightbox({
+        gallery: "#my-slider",
+        children: 'a',
+        pswpModule: () => import('photoswipe')
+    })
+    lightbox.init();
+
+    // Configurar Swiper
+    const swiper = new Swiper(".swiper", {
+        modules: [Navigation], // Definir los módulos a usar
+        loop: true,            // Definir el bucle para los slides
+        
+        // Hacer el slider Reactive
+        slidesPerView: "auto",      // Agregar un número de slides en pantalla
+        spaceBetween: 20,      // Separación de los slides en pixeles
+        breakpoints: {
+            // Cuando la pantalla es >= 768px
+            768: {
+                slidesPerView: 2,
+                spaceBetween: 30
+            },
+            // Cuando la pantalla es >= 1024px
+            1024:{
+                slidesPerView: 3,
+                spaceBetween: 40
+            }
+        },
+
+        navigation: {          // Definir botones next y prev para Navigation
+            prevEl: ".swiper-button-prev",
+            nextEl: ".swiper-button-next"
+        }
+    });
+</script>
+
+<!--------------------------------------HTML----------------------------------------------->
+<!-- CONTENEDOR PRINCIPAL DE SWIPER -->
+<div class="swiper">
+    <div class="swiper-wrapper" id="my-slider">
+        <!-- SLIDES -->
+        <a class="swiper-slide"
+            href="../../public/videos/avigilonACC7.mp4"
+            data-pswp-width="1920" data-pswp-height="1080"
+            target="_blank"
+            data-cropped="true"
+        > 
+            <img src="../../public/images/fondoBanner.gif" alt="">
+        </a>
+
+        <a class="swiper-slide"
+            href=""
+            data-pswp-width="1920" data-pswp-height="1080"
+            target="_blank"
+            data-cropped="true"
+        >
+            <img src="" alt="">
+        </a>
+
+        <a class="swiper-slide"
+            href=""
+            data-pswp-width="1920" data-pswp-height="1080"
+            target="_blank"
+            data-cropped="true"
+        >
+            <img src="" alt="">
+        </a>
+    </div>
+
+    <!-- PAGINACIÓN 
+    <div class="swiper-pagination"></div>-->
+
+    <!-- BOTONES DE NAVEGACIÓN -->
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+
+    <!-- SCROLLBAR
+    <div class="swiper-scrollbar"></div>-->
+</div>
+
+<!--------------------------------------ESTILOS CSS----------------------------------------------->
+<style>
+    .swiper-slide {
+        height: 600px;
+        border-radius: 10px;
+        overflow: hidden;
+    }
+
+    .swiper-slide img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .swiper-button-next,
+    .swiper-button-prev {
+        color: white;
+    }
+</style>
+
