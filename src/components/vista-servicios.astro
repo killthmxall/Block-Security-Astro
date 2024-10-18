@@ -1,0 +1,116 @@
+---
+import '@fontsource/ibm-plex-sans';
+
+import '@fontsource-variable/open-sans';
+---
+
+<!--------------------------------------HTML----------------------------------------------->
+<html>
+
+<body class="bg-white">
+
+<!-----------------------------------------NUESTROS SERVICIOS---------------------------------------------->
+<div class="container2">
+
+    <hr class="divider">
+
+    <h1 class="titulo2">Nuestros servicios</h1>
+
+    <div class="contenedor">
+      <img loading="lazy" class="imagenFondo" alt="" src="https://webtest832.wordpress.com/wp-content/uploads/2024/05/download-8.gif" data-object-fit="cover">
+      <div class="centrado">Videovigilancia</div>
+      <button class="botonServicio">Conoce más</button>
+    </div>
+
+    <div class="contenedor">
+      <img loading="lazy" height="400" class="imagenFondo" alt="" src="https://webtest832.wordpress.com/wp-content/uploads/2024/05/download-2.gif" data-object-fit="cover">
+      <div class="centrado">Control de Acceso</div>
+      <button class="botonServicio">Conoce más</button>
+    </div>
+
+    <div class="contenedor">
+      <img loading="lazy" height="400" class="imagenFondo" alt="" src="https://webtest832.wordpress.com/wp-content/uploads/2024/05/download-3-2.gif" data-object-fit="cover">
+      <div class="centrado">IoT y automatización</div>
+      <button class="botonServicio">Conoce más</button>
+    </div>
+
+    <div class="contenedor">
+      <img loading="lazy" height="400" class="imagenFondo" alt="" src="https://webtest832.wordpress.com/wp-content/uploads/2024/05/download-7.gif" data-object-fit="cover">
+      <div class="centrado">Sistemas de detección de incendio</div>
+      <button class="botonServicio">Conoce más</button>
+    </div>
+
+    <div class="contenedor">
+      <img loading="lazy" height="400" class="imagenFondo" alt="" src="https://webtest832.wordpress.com/wp-content/uploads/2024/05/download-5.gif" data-object-fit="cover">
+      <div class="centrado">Cableado estructurado y Networking</div>
+      <button class="botonServicio">Conoce más</button>
+    </div> 
+
+    <div class="contenedor">
+      <img loading="lazy" height="400" class="imagenFondo" alt="" src="https://webtest832.wordpress.com/wp-content/uploads/2024/05/download-6.gif" data-object-fit="cover">
+      <div class="centrado">Distribución de audio y video</div>
+      <button class="botonServicio">Conoce más</button>
+    </div>
+
+</div>
+
+<!-----------------------------------------BODY MAIN---------------------------------------------->
+    </main>
+</body>
+</html>
+
+<!--------------------------------------ESTILOS CSS----------------------------------------------->
+<style is:global>
+/************ NUESTROS SERVICIOS ************/
+
+@media (min-width: 100%) {
+    .container2{
+        max-width: 100%;
+    }
+}
+
+.divider {
+    margin: 5rem 0;
+}
+
+.titulo2{
+    display: block;
+    text-align: center;
+    font-size: 43px;
+    margin: 100px;
+}
+
+.contenedor{
+    position: relative;
+    text-align: center;
+}
+
+.imagenFondo{
+    width: 100%;
+    object-fit: cover;
+    filter: brightness(0.6);  /* 60% de brillo */
+    height: 493px; 
+    padding-bottom: 60px;
+}
+
+.centrado{
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 42px;
+    color: white;
+}
+
+.botonServicio{
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 16px;
+    color: white;
+    background-color: #f47d1f;
+    padding: 18px;
+    font-weight: bold;
+}
+</style>

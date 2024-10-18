@@ -1,6 +1,10 @@
 ---
 import VistaPrincipal from "../components/vista-principal.astro"
 import Gallery from "../components/Gallery.astro"
+import VistaVideovigilancia from "../components/vista-videovigilancia.astro"
+import VistaServicios from "../components/vista-servicios.astro"
+import VistaClientes from "../components/vista-clientes.astro"
+import Navbar from "../components/navbar.astro"
 ---
 
 <html lang="en">
@@ -10,8 +14,19 @@ import Gallery from "../components/Gallery.astro"
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
 		<title>Astro</title>
+
+		<!-- TAILWIND -->
+		<link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+
+		<!-- ICONS -->
+		<link
+		href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+		rel="stylesheet"/>
+
 	</head>
 	<body>
-		<VistaPrincipal />
+		<Navbar />
+		<!--VistaPrincipal client:load /-->
+	
 	</body>
 </html>

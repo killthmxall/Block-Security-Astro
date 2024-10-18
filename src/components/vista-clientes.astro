@@ -1,0 +1,116 @@
+---
+import '@fontsource/ibm-plex-sans';
+
+import '@fontsource-variable/open-sans';
+---
+
+<!--------------------------------------HTML----------------------------------------------->
+<html>
+
+<body class="bg-white">
+
+<!------------------------------------------------------ NUESTROS CLIENTES ------------------------------------------------------>
+<div class="container3">
+
+    <hr class="featurette-divider">
+
+    <h1 class="titulo3">Nuestros Clientes</h1>
+
+    <div class="container mx-auto px-4">
+      <div class="grid grid-cols-5 gap-4 p-4">
+        <div class="flex items-center justify-center p-4 bg-purple-500 text-white rounded-lg shadow-md">1</div>
+        <div class="flex items-center justify-center p-4 bg-purple-500 text-white rounded-lg shadow-md">2</div>
+        <div class="flex items-center justify-center p-4 bg-purple-500 text-white rounded-lg shadow-md">3</div>
+        <div class="flex items-center justify-center p-4 bg-purple-500 text-white rounded-lg shadow-md">4</div>
+        <div class="flex items-center justify-center p-4 bg-purple-500 text-white rounded-lg shadow-md">5</div>
+      </div>
+    </div>
+</div>
+
+<!------------------------------------------------------ PROVEEDORES ------------------------------------------------------>
+<div class="container3">
+
+    <hr class="featurette-divider">
+
+    <h1 class="titulo3">Soporte de múltiples proveedores</h1>
+
+    <div class="container mx-auto px-4">
+      <div class="grid grid-cols-5 gap-4 p-4">
+        <div class="flex items-center justify-center p-4 bg-purple-500 text-white rounded-lg shadow-md">1</div>
+        <div class="flex items-center justify-center p-4 bg-purple-500 text-white rounded-lg shadow-md">2</div>
+        <div class="flex items-center justify-center p-4 bg-purple-500 text-white rounded-lg shadow-md">3</div>
+        <div class="flex items-center justify-center p-4 bg-purple-500 text-white rounded-lg shadow-md">4</div>
+        <div class="flex items-center justify-center p-4 bg-purple-500 text-white rounded-lg shadow-md">5</div>
+      </div>
+    </div>
+</div>
+
+<!------------------------------------------------------ FOOTER ------------------------------------------------------>
+<div class="pie">
+    <footer class="container">
+    <p class="float-end"><a href="#">Regresar al principio</a></p>
+    <p>&copy; 2024 Block Security. &middot; <a href="#">Privacidad</a> &middot; <a href="#">Terminos</a></p>
+    </footer>
+</div>
+
+
+<!-----------------------------------------BODY MAIN---------------------------------------------->
+    </main>
+</body>
+</html>
+
+<!--------------------------------------ESTILOS CSS----------------------------------------------->
+<style is:global>
+/************ NUESTROS SERVICIOS ************/
+
+@media (min-width: 100%) {
+    .container2{
+        max-width: 100%;
+    }
+}
+
+.divider {
+    margin: 5rem 0;
+}
+
+.titulo2{
+    display: block;
+    text-align: center;
+    font-size: 43px;
+    margin: 100px;
+}
+
+.contenedor{
+    position: relative;
+    text-align: center;
+}
+
+.imagenFondo{
+    width: 100%;
+    object-fit: cover;
+    filter: brightness(0.6);  /* 60% de brillo */
+    height: 493px; 
+    padding-bottom: 60px;
+}
+
+.centrado{
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 42px;
+    color: white;
+}
+
+.botonServicio{
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 16px;
+    color: white;
+    background-color: #f47d1f;
+    padding: 18px;
+    font-weight: bold;
+}
+</style>
