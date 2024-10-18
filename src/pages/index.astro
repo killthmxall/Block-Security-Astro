@@ -5,6 +5,7 @@ import VistaVideovigilancia from "../components/vista-videovigilancia.astro"
 import VistaServicios from "../components/vista-servicios.astro"
 import VistaClientes from "../components/vista-clientes.astro"
 import Navbar from "../components/navbar.astro"
+import FormContacto from "../components/form-contacto.astro"
 ---
 
 <html lang="en">
@@ -26,7 +27,10 @@ import Navbar from "../components/navbar.astro"
 	</head>
 	<body>
 		<Navbar />
-		<!--VistaPrincipal client:load /-->
-	
+		<VistaPrincipal client:load />
+		<VistaServicios client:load/>
+		<VistaClientes client:load/>
+		<FormContacto client:load/>
+
 	</body>
 </html>

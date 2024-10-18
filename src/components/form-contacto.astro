@@ -1,0 +1,153 @@
+---
+import '@fontsource/ibm-plex-sans';
+
+import '@fontsource-variable/open-sans';
+---
+
+<!--------------------------------------HTML----------------------------------------------->
+<html>
+
+<body class="bg-white">
+
+<!------------------------------------------------------ FORM ------------------------------------------------------>
+<div class="container3">
+
+    <hr class="divider">
+
+    <h1 class="titulo3">¡Obtenga un asesoramiento hoy!</h1>
+
+    <div class="form1">
+        <form id="formContact" onsubmit="return enviarFormulario(event)">
+            <label for="nombre">Nombre y Apellido</label>
+            <input type="text" name="nombre" class="form-control" placeholder="Ingrese su nombre completo" required>
+            <div class="alert alert-danger mt-2" id="nombreError" hidden>
+                El nombre es obligatorio
+            </div>
+
+            <label for="email">Correo electrónico</label>
+            <input type="email" name="email" class="form-control" placeholder="Ingrese su correo electrónico" required>
+            <div class="alert alert-danger mt-2" id="emailError" hidden>
+                El correo es obligatorio
+            </div>
+
+            <label for="telefono">Teléfono</label>
+            <input type="tel" name="telefono" class="form-control" placeholder="Ingrese su número de teléfono" required>
+            <div class="alert alert-danger mt-2" id="telefonoError" hidden>
+                El Teléfono es obligatorio
+            </div>
+
+            <label for="fecha">Fecha (DD-MM-AAAA)</label>
+            <input type="date" name="fecha" class="form-control" required>
+            <div class="alert alert-danger mt-2" id="fechaError" hidden>
+                La Fecha es obligatoria
+            </div>
+
+            <label for="notas">Nota</label>
+            <textarea name="notas" rows="4"></textarea>
+
+            <button class="botonForm btn" type="submit">
+                Reservar cita
+            </button>
+        </form>
+    </div>
+</div>
+
+<!------------------------------------------------------ FOOTER ------------------------------------------------------>
+<div class="pie">
+    <footer class="container">
+        <p class="float-end"><a href="#">Regresar al principio</a></p>
+        <p>&copy; 2024 Block Security. &middot; <a href="#">Privacidad</a> &middot; <a href="#">Terminos</a></p>
+    </footer>
+</div>
+
+<!-----------------------------------------BODY MAIN---------------------------------------------->
+</body>
+</html>
+
+<!--------------------------------------ESTILOS CSS----------------------------------------------->
+<style is:global>
+/************ NUESTROS SERVICIOS ************/
+
+
+.divider {
+    margin: 2rem 0;
+}
+
+.titulo3 {
+    display: block;
+    text-align: center;
+    font-size: 43px;
+    margin: 100px;
+}
+
+.form-control {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+.alert {
+    color: red;
+}
+
+.botonForm {
+    background-color: #f47d1f;
+    color: white;
+    padding: 18px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+}
+</style>
+
+<script>
+function enviarFormulario(event) {
+    event.preventDefault();
+    
+    const form = event.target;
+    const nombre = form.nombre.value;
+    const email = form.email.value;
+    const telefono = form.telefono.value;
+    const fecha = form.fecha.value;
+
+    let isValid = true;
+
+    // Validar nombre
+    if (!nombre) {
+        document.getElementById('nombreError').hidden = false;
+        isValid = false;
+    } else {
+        document.getElementById('nombreError').hidden = true;
+    }
+
+    // Validar email
+    if (!email) {
+        document.getElementById('emailError').hidden = false;
+        isValid = false;
+    } else {
+        document.getElementById('emailError').hidden = true;
+    }
+
+    // Validar teléfono
+    if (!telefono) {
+        document.getElementById('telefonoError').hidden = false;
+        isValid = false;
+    } else {
+        document.getElementById('telefonoError').hidden = true;
+    }
+
+    // Validar fecha
+    if (!fecha) {
+        document.getElementById('fechaError').hidden = false;
+        isValid = false;
+    } else {
+        document.getElementById('fechaError').hidden = true;
+    }
+
+    // Si el formulario es válido, enviar la solicitud
+    if (isValid) {
+        // Aquí puedes agregar la lógica para enviar la solicitud
+        console.log('Formulario enviado');
+    }
+}
+</script>
