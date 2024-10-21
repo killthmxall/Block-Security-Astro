@@ -6,15 +6,16 @@ import VistaServicios from "../components/vista-servicios.astro"
 import VistaClientes from "../components/vista-clientes.astro"
 import Navbar from "../components/navbar.astro"
 import FormContacto from "../components/form-contacto.astro"
+import Footer from "../components/footer.astro"
 ---
 
 <html lang="en">
 	<head>
 		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<link rel="icon" type="image/svg+xml" href="../../public/images/short-logo.png" />
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
+		<title>Block Security</title>
 
 		<!-- TAILWIND -->
 		<link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
@@ -24,6 +25,9 @@ import FormContacto from "../components/form-contacto.astro"
 		href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
 		rel="stylesheet"/>
 
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
 	</head>
 	<body>
 		<Navbar />
@@ -31,6 +35,7 @@ import FormContacto from "../components/form-contacto.astro"
 		<VistaServicios client:load/>
 		<VistaClientes client:load/>
 		<FormContacto client:load/>
+		<Footer client:load>
 
 	</body>
 </html>

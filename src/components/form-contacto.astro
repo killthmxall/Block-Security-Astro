@@ -10,54 +10,46 @@ import '@fontsource-variable/open-sans';
 <body class="bg-white">
 
 <!------------------------------------------------------ FORM ------------------------------------------------------>
-<div class="container3">
+<div>
 
     <hr class="divider">
 
     <h1 class="titulo3">¡Obtenga un asesoramiento hoy!</h1>
 
-    <div class="form1">
+    <div class="form1 w-screen">
         <form id="formContact" onsubmit="return enviarFormulario(event)">
-            <label for="nombre">Nombre y Apellido</label>
-            <input type="text" name="nombre" class="form-control" placeholder="Ingrese su nombre completo" required>
+            <label class="font-bold" for="nombre">Nombre y Apellido</label>
+            <input type="text" name="nombre" class="form-control rounded-lg" placeholder="Ingrese su nombre completo" required>
             <div class="alert alert-danger mt-2" id="nombreError" hidden>
                 El nombre es obligatorio
             </div>
 
-            <label for="email">Correo electrónico</label>
-            <input type="email" name="email" class="form-control" placeholder="Ingrese su correo electrónico" required>
+            <label class="font-bold" for="email">Correo electrónico</label>
+            <input type="email" name="email" class="form-control rounded-lg" placeholder="Ingrese su correo electrónico" required>
             <div class="alert alert-danger mt-2" id="emailError" hidden>
                 El correo es obligatorio
             </div>
 
-            <label for="telefono">Teléfono</label>
-            <input type="tel" name="telefono" class="form-control" placeholder="Ingrese su número de teléfono" required>
+            <label class="font-bold" for="telefono">Teléfono</label>
+            <input type="tel" name="telefono" class="form-control rounded-lg" placeholder="Ingrese su número de teléfono" required>
             <div class="alert alert-danger mt-2" id="telefonoError" hidden>
                 El Teléfono es obligatorio
             </div>
 
-            <label for="fecha">Fecha (DD-MM-AAAA)</label>
-            <input type="date" name="fecha" class="form-control" required>
+            <label class="font-bold" for="fecha">Fecha (DD-MM-AAAA)</label>
+            <input type="date" name="fecha" class="form-control rounded-lg" required>
             <div class="alert alert-danger mt-2" id="fechaError" hidden>
                 La Fecha es obligatoria
             </div>
 
-            <label for="notas">Nota</label>
-            <textarea name="notas" rows="4"></textarea>
-
-            <button class="botonForm btn" type="submit">
+            <label class="font-bold" for="notas">Nota</label>
+            <textarea name="notas" rows="4" class="border"></textarea>
+            <br>
+            <button class="botonForm btn rounded-full" type="submit">
                 Reservar cita
             </button>
         </form>
     </div>
-</div>
-
-<!------------------------------------------------------ FOOTER ------------------------------------------------------>
-<div class="pie">
-    <footer class="container">
-        <p class="float-end"><a href="#">Regresar al principio</a></p>
-        <p>&copy; 2024 Block Security. &middot; <a href="#">Privacidad</a> &middot; <a href="#">Terminos</a></p>
-    </footer>
 </div>
 
 <!-----------------------------------------BODY MAIN---------------------------------------------->
@@ -66,8 +58,6 @@ import '@fontsource-variable/open-sans';
 
 <!--------------------------------------ESTILOS CSS----------------------------------------------->
 <style is:global>
-/************ NUESTROS SERVICIOS ************/
-
 
 .divider {
     margin: 2rem 0;
@@ -80,10 +70,27 @@ import '@fontsource-variable/open-sans';
     margin: 100px;
 }
 
+/********** CENTRAR FORMULARIO ***********/
+
+.form1 {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 40px;
+    border: 1px solid #ddd;
+    border-radius: 30px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
 .form-control {
     width: 100%;
     padding: 10px;
     margin: 10px 0;
+    border: 1px solid lightgrey ;
 }
 
 .alert {
@@ -98,6 +105,7 @@ import '@fontsource-variable/open-sans';
     border: none;
     cursor: pointer;
 }
+
 </style>
 
 <script>
@@ -146,7 +154,7 @@ function enviarFormulario(event) {
 
     // Si el formulario es válido, enviar la solicitud
     if (isValid) {
-        // Aquí puedes agregar la lógica para enviar la solicitud
+        // Lógica para enviar la solicitud
         console.log('Formulario enviado');
     }
 }
