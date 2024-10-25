@@ -17,6 +17,7 @@
     "astro": "^4.16.5",
     "astro-navbar": "^2.3.3",
     "cloudinary-video-player": "^2.1.0",
+    "flowbite": "^2.5.2",
     "photoswipe": "^5.4.4",
     "swiper": "^11.1.14",
     "tailwindcss": "^3.4.14"
