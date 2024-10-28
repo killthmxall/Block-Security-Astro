@@ -36,3 +36,77 @@ All commands are run from the root of the project, from a terminal:
 | `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
 | `npm run astro -- --help` | Get help using the Astro CLI                     |
 
+## GitHub
+
+Pasos para la actualización del repositorio:
+
+### Cargar un proyecto nuevo a un repositorio
+
+```text
+git init
+```
+
+```text
+git add .
+```
+
+```text
+git commit -m "feat: Proyecto subido a github"
+```
+
+```text
+git branch -M main
+```
+
+```text
+git remote add origin https://github.com/enlace-del-repositorio
+```
+
+```text
+git push -u origin main
+```
+
+### Cargar cambios realizados en el proyecto
+
+**Siempre realizar un "pull" como primer paso.**
+
+```text
+git pull origin main
+```
+
+```text
+git init
+```
+
+```text
+git status
+```
+
+```text
+git add .
+```
+
+```text
+git commit -m "Describir el cambio que se hace"
+```
+
+```text
+git branch -M main
+```
+
+```text
+**Opcional:** git remote add origin https://github.com/killthmxall/Curso-Angular.git
+```
+
+```text
+git push -u origin main --force
+```
+
+### Clonar repositorio
+```text
+>>cd D:/
+```
+
+```text
+git clone https://github.com/killthmxall/Curso-Angular.git
+```
