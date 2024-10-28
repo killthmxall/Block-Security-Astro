@@ -14,7 +14,7 @@ import '@fontsource-variable/open-sans';
 
     <hr class="divider">
 
-    <h1 class="titulo3">¡Obtenga un asesoramiento hoy!</h1>
+    <h1 class="text-center py-14 text-3xl lg:text-4xl">¡Obtenga un asesoramiento hoy!</h1>
 
     <div class="form1 w-screen">
         <form id="formContact" onsubmit="return enviarFormulario(event)">
@@ -63,13 +63,6 @@ import '@fontsource-variable/open-sans';
     margin: 2rem 0;
 }
 
-.titulo3 {
-    display: block;
-    text-align: center;
-    font-size: 43px;
-    margin: 100px;
-}
-
 /********** CENTRAR FORMULARIO ***********/
 
 .form1 {
@@ -109,53 +102,53 @@ form {
 </style>
 
 <script>
-function enviarFormulario(event) {
-    event.preventDefault();
-    
-    const form = event.target;
-    const nombre = form.nombre.value;
-    const email = form.email.value;
-    const telefono = form.telefono.value;
-    const fecha = form.fecha.value;
+    function enviarFormulario(event) {
+        event.preventDefault();
+        
+        const form = event.target;
+        const nombre = form.nombre.value;
+        const email = form.email.value;
+        const telefono = form.telefono.value;
+        const fecha = form.fecha.value;
 
-    let isValid = true;
+        let isValid = true;
 
-    // Validar nombre
-    if (!nombre) {
-        document.getElementById('nombreError').hidden = false;
-        isValid = false;
-    } else {
-        document.getElementById('nombreError').hidden = true;
+        // Validar nombre
+        if (!nombre) {
+            document.getElementById('nombreError').hidden = false;
+            isValid = false;
+        } else {
+            document.getElementById('nombreError').hidden = true;
+        }
+
+        // Validar email
+        if (!email) {
+            document.getElementById('emailError').hidden = false;
+            isValid = false;
+        } else {
+            document.getElementById('emailError').hidden = true;
+        }
+
+        // Validar teléfono
+        if (!telefono) {
+            document.getElementById('telefonoError').hidden = false;
+            isValid = false;
+        } else {
+            document.getElementById('telefonoError').hidden = true;
+        }
+
+        // Validar fecha
+        if (!fecha) {
+            document.getElementById('fechaError').hidden = false;
+            isValid = false;
+        } else {
+            document.getElementById('fechaError').hidden = true;
+        }
+
+        // Si el formulario es válido, enviar la solicitud
+        if (isValid) {
+            // Lógica para enviar la solicitud
+            console.log('Formulario enviado');
+        }
     }
-
-    // Validar email
-    if (!email) {
-        document.getElementById('emailError').hidden = false;
-        isValid = false;
-    } else {
-        document.getElementById('emailError').hidden = true;
-    }
-
-    // Validar teléfono
-    if (!telefono) {
-        document.getElementById('telefonoError').hidden = false;
-        isValid = false;
-    } else {
-        document.getElementById('telefonoError').hidden = true;
-    }
-
-    // Validar fecha
-    if (!fecha) {
-        document.getElementById('fechaError').hidden = false;
-        isValid = false;
-    } else {
-        document.getElementById('fechaError').hidden = true;
-    }
-
-    // Si el formulario es válido, enviar la solicitud
-    if (isValid) {
-        // Lógica para enviar la solicitud
-        console.log('Formulario enviado');
-    }
-}
 </script>

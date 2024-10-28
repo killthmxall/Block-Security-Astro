@@ -7,6 +7,9 @@ import VistaClientes from "../pages/clientes.astro"
 import FormContacto from "../components/form-contacto.astro"
 import Footer from "../components/footer.astro"
 import NavMain from "../components/navbar-main.astro"
+
+// Supports weights 100-900
+import '@fontsource/outfit/500.css';
 ---
 
 <html lang="en">
@@ -24,25 +27,33 @@ import NavMain from "../components/navbar-main.astro"
 		<link href="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.css" rel="stylesheet" />
 
 		<!-- ICONS -->
-		<link
-		href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
-		rel="stylesheet"/>
+		<link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet"/>
+
+        <!-- ANIMATIONS -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 
 	</head>
+
 	<body>
 
-		<div class="intro">
-			<h1 class="logo-header">
-				<span class="logo">Block</span><span class="logo"> Security</span>
-				<br>
-				<img class= "imgL" src="../../public/images/short-logo.png" alt="">
-			</h1>
-		</div>
+        <!------ SCRIPT ANIMACION DE INICIO ------->
+        <div class="intro ">
+            <h1 class="logo-header text-center">
+                <span class="logo text-5xl lg:text-5xl md:text-5xl sm:text-2xl font-bold">BLOCK</span>
+                <span class="logo text-5xl lg:text-5xl md:text-5xl sm:text-2xl font-bold">SECURITY</span>
+                <br>
+                <div class="flex items-center justify-center">
+                    <img class="animate__animated animate__flip h-64 w-64 object-contain" src="../../public/images/short-logo.png" alt="">
+                </div>
+            </h1>
+        </div>
+        
 		
 		<script src="./intro-app.js"></script>
+        <!----------------------------------------->
 
 		<NavMain client:load/>
 		<VistaPrincipal client:load />
@@ -89,12 +100,8 @@ header h4 {
     top: 0;
     width: 100%;
     height: 100vh;
-    background-color: #161616;
+    background-color: rgb(255, 255, 255);
     transition: 1s;
-}
-
-.imgL {
-    height: 200px;
 }
 
 .logo-header {
@@ -102,10 +109,11 @@ header h4 {
     top: 40%;
     left: 50%;
     transform: translate(-50%, -50%);
-    color: white;
+    color: rgb(51, 51, 51);
 }
 
 .logo {
+    font-family: 'Outfit', sans-serif;
     position: relative;
     display: inline-block;
     bottom: -20px;
