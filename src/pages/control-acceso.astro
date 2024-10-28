@@ -1,27 +1,27 @@
 ---
-import LayoutVideovigilancia from "../layouts/servicios-layout.astro"
+import LayoutControlAcceso from "../layouts/servicios-layout.astro"
 ---
 
 <!--------------------------------------HTML----------------------------------------------->
-<LayoutVideovigilancia>
+<LayoutControlAcceso>
     <div slot="encabezado">
         <h2 class="text-orange-500 text-base font-bold uppercase mb-2">
-            Videovigilancia
+            Control de Acceso
         </h2>
         <h1 class="text-4xl lg:text-6xl font-bold mb-4">
-            Asegura tus Espacios con Nuestros <br>
-            Avanzados Sistemas de Vigilancia en Tiempo Real
+            Protege tus Instalaciones con Nuestros Avanzados Sistemas de Control de Acceso
         </h1>
         <p class="mt-4 text-gray-600 mb-8 text-lg">
-            Instalamos sistemas de videovigilancia de alta calidad que le permiten monitorear y grabar en tiempo real lo que ocurre en sus instalaciones. <br>
-            Con software de monitoreo avanzado, puede supervisar sus espacios desde cualquier lugar y en cualquier momento. <br>
+            Ofrecemos soluciones avanzadas de control de acceso que garantizan la seguridad y protección de sus instalaciones. <br>
+            Nuestros sistemas incluyen tarjetas de proximidad, control remoto y más permitiéndole gestionar de manera eficiente quién puede ingresar a sus áreas restringidas. <br>
         </p>
         <div class="mt-12">
-            <img alt="Top view of a workspace with laptops, coffee, and notebooks" class="mx-auto rounded-lg shadow-lg" height="400" src="https://edintel.com/wp-content/uploads/2022/02/cctv.jpg" width="800"/>
+            <img alt="Top view of a workspace with laptops, coffee, and notebooks" class="mx-auto rounded-lg shadow-lg" height="400" src="https://blog.nuoplanet.com/hubfs/portada_mejor%20solucion%20control%20de%20accesos_nuo.jpg" width="800"/>
         </div>
     </div>
 
-<!--------------------------------------- VIDEOS APLICATIVOS --------------------------------------------->
+    <!--------------------------------------- VIDEOS APLICATIVOS --------------------------------------------->
+
     <div slot="videos" class="text-center">
         <video class="w-full h-auto mb-4" controls>
             <source src="https://res.cloudinary.com/df5olfhrq/video/upload/v1729827422/ydx9s22ieepjidv0afpk.mp4" type="video/mp4"/>
@@ -29,10 +29,10 @@ import LayoutVideovigilancia from "../layouts/servicios-layout.astro"
         </video>
         
         <h2 class="text-xl font-semibold">
-            Control Center 7
+            ID Screen
         </h2>
         <p class="text-justify">
-            Sistema de gestión de video con IA para seguridad avanzada. Permite actualizaciones para mayor búsqueda.
+            Tableta biométrica que controla el registro, verificación y procesamiento para el acceso en áreas designadas.                
         </p>
     </div>
 
@@ -42,10 +42,10 @@ import LayoutVideovigilancia from "../layouts/servicios-layout.astro"
             Your browser does not support the video tag.
         </video>
         <h2 class="text-xl font-semibold">
-            Cámara H6A, H6X
+            VisionPass SP
         </h2>
         <p class="text-justify">
-            Cámaras de seguridad con IA, sin micrófono, IR de largo alcance y protección contra impactos.
+            Control de acceso multifactorial con reconocimiento facial integrado con inteligencia artificial.
         </p>
     </div>
 
@@ -55,10 +55,10 @@ import LayoutVideovigilancia from "../layouts/servicios-layout.astro"
             Your browser does not support the video tag.
         </video>
         <h2 class="text-xl font-semibold">
-            WiseNet X Series
+            BioStation 3
         </h2>
         <p class="text-justify">
-            Cámaras con IA, WDR de 150dB, estabilización giroscópica y comprensión avanzada.
+            Lector biométrico para administrar el acceso de los visitantes en cualquier momento y lugar.
         </p>
     </div>
 
@@ -68,10 +68,10 @@ import LayoutVideovigilancia from "../layouts/servicios-layout.astro"
             Your browser does not support the video tag.
         </video>
         <h2 class="text-xl font-semibold">
-            Smart Video Search
+            Door Station
         </h2>
         <p class="text-justify">
-            Sistema de gestión de video con IA para seguridad avanzada. Permite actualizaciones para mayor búsqueda.
+            Estación inalámbrica con reconocimiento facial, captura videos y permite hablar con visitantes.
         </p>
     </div>
 
@@ -81,10 +81,10 @@ import LayoutVideovigilancia from "../layouts/servicios-layout.astro"
             Your browser does not support the video tag.
         </video>
         <h2 class="text-xl font-semibold">
-            H5A Multisensor
+            Transit Ultimate
         </h2>
         <p class="text-justify">
-            Cámaras de seguridad con IA, sin micrófono, IR de largo alcance y protección contra impactos.
+            Lector moderno de largo alcance. Identificando vehículos y usuarios en condiciones difíciles.
         </p>
     </div>
 
@@ -94,19 +94,22 @@ import LayoutVideovigilancia from "../layouts/servicios-layout.astro"
             Your browser does not support the video tag.
         </video>
         <h2 class="text-xl font-semibold">
-            Cámara TNO 7180RLP
+            Salto JustIN Mobile
         </h2>
         <p class="text-justify">
-            Cámaras con IA, WDR de 150dB, estabilización giroscópica y comprensión avanzada.
+            Cerradura inteligente inalámbrica para control de acceso via smartphone.
         </p>
     </div>
+                
 
-<!--------------------------------------- NAVEGACIÓN --------------------------------------------->
-    <a slot="navegacion" class="w-auto font-bold text-white bg-orange-400 py-2.5 px-5 rounded-full hover:bg-orange-500 transition duration-400 ease-in-out lg:mr-4" href="/control-acceso">
-        Control de Acceso
+    <a slot="navegacion" class="w-auto font-bold text-white bg-orange-400 py-2.5 px-5 rounded-full hover:bg-orange-500 transition duration-400 ease-in-out lg:mr-4" href="/videovigilancia">
+        <i class="ri-arrow-left-line"></i>
+        Videovigilancia
+    </a> 
+                
+    <a slot="navegacion" class="w-auto font-bold text-white bg-orange-400 py-2.5 px-5 rounded-full hover:bg-orange-500 transition duration-400 ease-in-out lg:mr-4" href="/iot-automatizacion">
+        IoT y Automatización
         <i class="ri-arrow-right-line"></i>
     </a> 
 
-</LayoutVideovigilancia>
-
-
+</LayoutControlAcceso>

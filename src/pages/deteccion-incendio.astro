@@ -1,0 +1,74 @@
+---
+import LayoutDeteccion from "../layouts/servicios-layout.astro"
+---
+
+<!--------------------------------------HTML----------------------------------------------->
+<LayoutDeteccion>
+    <div slot="encabezado">
+        <h2 class="text-orange-500 text-base font-bold uppercase mb-2">
+            Sistemas de detección de incendio
+        </h2>
+        <h1 class="text-4xl lg:text-6xl font-bold mb-4">
+            Protege tu Espacio con Sistemas Avanzados de Detección y Supresión de Incendios
+        </h1>
+        <p class="mt-4 text-gray-600 mb-8 text-lg">
+            Proveemos e instalamos sistemas de detección y supresión de incendios para proteger su propiedad y sus ocupantes. <br>
+            Nuestros servicios incluyen detectores de humo, alarmas contra incendios; todos diseñados para una rápida respuesta en caso de emergencia. <br>
+        </p>
+        <div class="mt-12">
+            <img alt="Top view of a workspace with laptops, coffee, and notebooks" class="mx-auto rounded-lg shadow-lg" height="400" src="https://www.firext.es/wp-content/uploads/2017/06/Sistemas-deteccion-alarmas.jpg" width="800"/>
+        </div>
+    </div>
+
+    <!--------------------------------------- VIDEOS APLICATIVOS --------------------------------------------->
+
+    <div slot="videos" class="text-center">
+        <video class="w-full h-auto mb-4" controls>
+            <source src="https://res.cloudinary.com/df5olfhrq/video/upload/v1729827422/ydx9s22ieepjidv0afpk.mp4" type="video/mp4"/>
+            Your browser does not support the video tag.
+        </video>
+        
+        <h2 class="text-xl font-semibold">
+            EST 4
+        </h2>
+        <p class="text-justify">
+            El sistema EST4 de Edwards es una avanzada plataforma de detección y comunicación de incendios, flexible, segura y compatible con actualizaciones.
+    </div>
+
+    <div slot="videos" class="text-center">
+        <video class="w-full h-auto mb-4" controls>
+            <source src="  " type="video/mp4"/>
+            Your browser does not support the video tag.
+        </video>
+        <h2 class="text-xl font-semibold">
+            Signature Optica
+        </h2>
+        <p class="text-justify">
+            El Signature Optica de Edwards reduce falsas alarmas diferenciando partículas molestas de amenazas reales.
+        </p>
+    </div>
+
+    <div slot="videos" class="text-center">
+        <video class="w-full h-auto mb-4" controls>
+            <source src="  " type="video/mp4"/>
+            Your browser does not support the video tag.
+        </video>
+        <h2 class="text-xl font-semibold">
+            Genesis LED Outdoor
+        </h2>
+        <p class="text-justify">
+            Luz LED resistente, adaptable, segura. Ideal para climas hostiles y húmedos. Lista para cualquier aplicación de seguridad humana.
+        </p>
+    </div>
+
+    <a slot="navegacion" class="w-auto font-bold text-white bg-orange-400 py-2.5 px-5 rounded-full hover:bg-orange-500 transition duration-400 ease-in-out lg:mr-4" href="/iot-automatizacion">
+        <i class="ri-arrow-left-line"></i>
+        IoT y Automatización
+    </a> 
+    
+    <a slot="navegacion" class="w-auto font-bold text-white bg-orange-400 py-2.5 px-5 rounded-full hover:bg-orange-500 transition duration-400 ease-in-out lg:mr-4" href="/cableado-estructurado">
+        Cableado Estructurado
+        <i class="ri-arrow-right-line"></i>
+    </a> 
+
+</LayoutDeteccion>

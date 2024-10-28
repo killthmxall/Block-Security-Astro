@@ -1,0 +1,79 @@
+---
+import '@fontsource/ibm-plex-sans';
+
+import '@fontsource-variable/open-sans';
+
+import { Astronav, MenuItems, MenuIcon, Dropdown, DropdownItems, DropdownSubmenu } from "astro-navbar";
+
+import NavMain from "../components/navbar-main.astro"
+
+import Footer from "../components/footer.astro"
+---
+
+<head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="../../public/images/short-logo.png" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <title>Block Security</title>
+
+    <!-- TAILWIND -->
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+
+    <!-- FLOWBITE  -->
+    <link href="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.css" rel="stylesheet" />
+
+    <!-- ICONS -->
+	<link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet"/>
+
+    <!-- CLOUDFLARE -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+
+    <!-- GOOGLE FONTS -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&amp;display=swap" rel="stylesheet"/>
+</head>
+
+<html>
+    <NavMain />
+    <main class="container mx-auto px-4 py-16 text-center mt-14">
+        <slot name="encabezado">
+            <!-- Contenido principal se renderiza aquí desde otros componentes -->
+        </slot>
+
+        <!-- SECCIÓN DE VIDEOS -->
+        <hr class="mt-28">
+        <div class="container mx-auto px-4 py-8">
+            
+            <h1 class="text-4xl font-semibold text-center mb-16">
+                Videos Aplicativos
+            </h1>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <slot name="videos">
+                    <!-- Cada video se renderiza aquí desde otros componentes -->
+                </slot>
+            </div>
+
+        </div>
+
+        <!-- LINKS DE NAVEGACIÓN -->
+        <div class="flex justify-end mt-10">
+
+            <slot name="navegacion">
+                <!-- Links de navegación adicionales se renderizan aquí -->
+            </slot>
+            
+        </div>
+    </main>
+    
+    <Footer />
+
+</html>
+
+<script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.js"></script>
+
+<style>
+    body {
+        font-family: 'Inter', sans-serif;
+    }
+</style>

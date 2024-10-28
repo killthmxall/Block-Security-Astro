@@ -1,0 +1,86 @@
+---
+import LayoutCableado from "../layouts/servicios-layout.astro"
+---
+
+<!--------------------------------------HTML----------------------------------------------->
+<LayoutCableado>
+    <div slot="encabezado">
+        <h2 class="text-orange-500 text-base font-bold uppercase mb-2">
+            Cableado Estructurado y Networking
+        </h2>
+        <h1 class="text-4xl lg:text-6xl font-bold mb-4">
+            Fortalece tu Conectividad con Nuestras Soluciones Avanzadas de Cableado Estructurado y Networking    
+        </h1>
+        <p class="mt-4 text-gray-600 mb-8 text-lg">
+            Diseñamos e implementamos infraestructuras de cableado estructurado y soluciones de networking para garantizar una conectividad robusta y fiable. <br>
+            Nuestros servicios cubren desde el cableado de datos hasta la instalación de equipos de red y gestión de servidores. <br>
+        </p>
+        <div class="mt-12">
+            <img alt="Top view of a workspace with laptops, coffee, and notebooks" class="mx-auto rounded-lg shadow-lg" height="400" src="https://romelar.es/wp-contenido/uploads/2021/07/5-normativa-del-cableado-estructurado.jpg" width="800"/>
+        </div>
+    </div>
+
+<!--------------------------------------- VIDEOS APLICATIVOS --------------------------------------------->
+    <div slot="videos" class="text-center">
+        <video class="w-full h-auto mb-4" controls>
+            <source src="https://res.cloudinary.com/df5olfhrq/video/upload/v1729827422/ydx9s22ieepjidv0afpk.mp4" type="video/mp4"/>
+            Your browser does not support the video tag.
+        </video>
+        
+        <h2 class="text-xl font-semibold">
+            UniFi Dream Machine
+        </h2>
+        <p class="text-justify">
+            Combinación entre un router , un USG, controlador de red, un access point y un switch en una sola unidad.
+    </div>
+
+    <div slot="videos" class="text-center">
+        <video class="w-full h-auto mb-4" controls>
+            <source src="  " type="video/mp4"/>
+            Your browser does not support the video tag.
+        </video>
+        <h2 class="text-xl font-semibold">
+            Ubiquiti Unifi
+        </h2>
+        <p class="text-justify">
+            Plataforma WiFi 7 escalable que ofrece experiencias similares a un cableado físico. Diseñada para adaptarse a entornos específicos.
+        </p>
+    </div>
+
+    <div slot="videos" class="text-center">
+        <video class="w-full h-auto mb-4" controls>
+            <source src="  " type="video/mp4"/>
+            Your browser does not support the video tag.
+        </video>
+        <h2 class="text-xl font-semibold">
+            Cisco Devices
+        </h2>
+        <p class="text-justify">
+            Los dispositivos de Cisco son esenciales para una comunicación empresarial y el acceso correcto a internet.                
+        </p>
+    </div>
+
+    <div slot="videos" class="text-center">
+        <video class="w-full h-auto mb-4" controls>
+            <source src="  " type="video/mp4"/>
+            Your browser does not support the video tag.
+        </video>
+        <h2 class="text-xl font-semibold">
+            Vertical Cable Manager
+        </h2>
+        <p class="text-justify">
+            Gestiona cables verticalmente proporcionando almacenamiento de alta densidad que minimiza el área requerida para la red
+        </p>
+    </div>
+
+    <a slot="navegacion" class="w-auto font-bold text-white bg-orange-400 py-2.5 px-5 rounded-full hover:bg-orange-500 transition duration-400 ease-in-out lg:mr-4" href="/deteccion-incendio">
+        <i class="ri-arrow-left-line"></i>
+        Detección de Incendios
+    </a> 
+    
+    <a slot="navegacion" class="w-auto font-bold text-white bg-orange-400 py-2.5 px-5 rounded-full hover:bg-orange-500 transition duration-400 ease-in-out lg:mr-4" href="/distribucion-audio-video">
+        Distribución de Audio y Video
+        <i class="ri-arrow-right-line"></i>
+    </a> 
+
+</LayoutCableado>
