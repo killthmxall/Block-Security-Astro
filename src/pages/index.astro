@@ -2,14 +2,12 @@
 import VistaPrincipal from "../pages/main.astro"
 import Gallery from "../components/Gallery.astro"
 import VistaVideovigilancia from "../pages/videovigilancia.astro"
-import VistaServicios from "../pages/servicios.astro"
-import VistaClientes from "../pages/clientes.astro"
+import VistaServicios from "../components/servicios.astro"
+import VistaClientes from "../components/clientes.astro"
 import FormContacto from "../components/form-contacto.astro"
 import Footer from "../components/footer.astro"
 import NavMain from "../components/navbar-main.astro"
 
-// Supports weights 100-900
-import '@fontsource/outfit/500.css';
 ---
 
 <html lang="en">
@@ -39,7 +37,7 @@ import '@fontsource/outfit/500.css';
 
 	<body>
 
-        <!------ SCRIPT ANIMACION DE INICIO ------->
+        <!------ SCRIPT ANIMACION DE INICIO -------
         <div class="intro ">
             <h1 class="logo-header text-center">
                 <span class="logo text-5xl lg:text-5xl md:text-5xl sm:text-2xl font-bold">BLOCK</span>
@@ -53,7 +51,7 @@ import '@fontsource/outfit/500.css';
         
 		
 		<script src="./intro-app.js"></script>
-        <!----------------------------------------->
+        !----------------------------------------->
 
 		<NavMain client:load/>
 		<VistaPrincipal client:load />
@@ -68,11 +66,11 @@ import '@fontsource/outfit/500.css';
 </html>
 
 <style>
-    * {
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Poppins", sans-serif;
     font-weight: 300;
     font-style: normal;
 }

@@ -36,15 +36,10 @@ import '@fontsource-variable/open-sans';
                 El Teléfono es obligatorio
             </div>
 
-            <label class="font-bold" for="fecha">Fecha (DD-MM-AAAA)</label>
-            <input type="date" name="fecha" class="form-control rounded-lg" required>
-            <div class="alert alert-danger mt-2" id="fechaError" hidden>
-                La Fecha es obligatoria
-            </div>
-
             <label class="font-bold" for="notas">Nota</label>
             <textarea name="notas" rows="4" class="border"></textarea>
             <br>
+            
             <button class="botonForm btn rounded-full" type="submit">
                 Reservar cita
             </button>
@@ -109,7 +104,6 @@ form {
         const nombre = form.nombre.value;
         const email = form.email.value;
         const telefono = form.telefono.value;
-        const fecha = form.fecha.value;
 
         let isValid = true;
 
@@ -135,14 +129,6 @@ form {
             isValid = false;
         } else {
             document.getElementById('telefonoError').hidden = true;
-        }
-
-        // Validar fecha
-        if (!fecha) {
-            document.getElementById('fechaError').hidden = false;
-            isValid = false;
-        } else {
-            document.getElementById('fechaError').hidden = true;
         }
 
         // Si el formulario es válido, enviar la solicitud

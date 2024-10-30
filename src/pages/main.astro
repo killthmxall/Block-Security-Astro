@@ -1,7 +1,5 @@
 ---
-import '@fontsource/ibm-plex-sans';
-
-import '@fontsource-variable/open-sans';
+import '@fontsource/outfit/200.css';
 ---
 
 <!--------------------------------------HTML----------------------------------------------->
@@ -36,7 +34,7 @@ import '@fontsource-variable/open-sans';
 
 
                     </h2>
-                    <p class="mt-4 text-pretty lg:text-2xl font-semibold">
+                    <p class="mt-4 text-pretty lg:text-2xl font-medium">
                         Integrando tecnología en la nube de manera eficiente
                         y confiable para proteger los activos y <br>
                         personas de corporaciones, asegurando 
@@ -64,28 +62,28 @@ import '@fontsource-variable/open-sans';
         <section class="py-12">
             <div class="container mx-auto px-4">
                 <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                    
-                    <div class="relative">
-                        <img alt="" class="imagen" src="https://webtest832.wordpress.com/wp-content/uploads/2024/05/ezgif.com-video-to-gif-converter.gif"/>
-                        <div class="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50">
+
+                    <div class="relative animated animatedFadeInUp fadeInUp">
+                        <img alt="" class="w-full h-96 object-cover rounded-xl" src="https://webtest832.wordpress.com/wp-content/uploads/2024/05/ezgif.com-video-to-gif-converter.gif"/>
+                        <div class="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 rounded-xl">
                             <h3 class="text-white text-4xl text-center">
                                 Diseño y Auditoría de proyectos
                             </h3>
                         </div>
                     </div>
 
-                    <div class="relative">
-                        <img alt="" class="imagen" src="https://webtest832.wordpress.com/wp-content/uploads/2024/05/18031-287831468_small-ezgif.com-video-to-gif-converter.gif" />
-                        <div class="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50">
+                    <div class="relative animated animatedFadeInUp fadeInUp">
+                        <img alt="" class="w-full h-96 object-cover rounded-xl" src="https://webtest832.wordpress.com/wp-content/uploads/2024/05/18031-287831468_small-ezgif.com-video-to-gif-converter.gif" />
+                        <div class="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 rounded-xl">
                             <h3 class="text-white text-4xl">
                                 Implementación
                             </h3>
                         </div>
                     </div>
 
-                    <div class="relative">
-                        <img alt="" class="imagen" src="https://webtest832.wordpress.com/wp-content/uploads/2024/05/serviciotecnico-ezgif.com-video-to-gif-converter.gif" />
-                        <div class="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50">
+                    <div class="relative animated animatedFadeInUp fadeInUp">
+                        <img alt="" class="w-full h-96 object-cover rounded-xl" src="https://webtest832.wordpress.com/wp-content/uploads/2024/05/serviciotecnico-ezgif.com-video-to-gif-converter.gif" />
+                        <div class="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 rounded-xl">
                             <h3 class="text-white text-4xl">
                                 Servicio Técnico
                             </h3>
@@ -104,13 +102,11 @@ import '@fontsource-variable/open-sans';
 </html>
 
 <!--------------------------------------ESTILOS CSS----------------------------------------------->
-<style is:global>
+<style>
 
-* {
-    font-family: 'Open Sans Variable', sans-serif;
+body {
+  font-family: 'Outfit', sans-serif;
 }
-
-
 
 /************ IMAGENES PROMOCIONALES DEL SITIO ***********/
 .imagen{
@@ -173,6 +169,47 @@ import '@fontsource-variable/open-sans';
     text-align: center;
     font-size: 43px;
     margin: 30px;
+}
+
+/* Animation */
+
+@keyframes fadeInUp {
+    from {
+        transform: translate3d(0,40px,0)
+    }
+
+    to {
+        transform: translate3d(0,0,0);
+        opacity: 1
+    }
+}
+
+@-webkit-keyframes fadeInUp {
+    from {
+        transform: translate3d(0,40px,0)
+    }
+
+    to {
+        transform: translate3d(0,0,0);
+        opacity: 1
+    }
+}
+
+.animated {
+    animation-duration: 1s;
+    animation-fill-mode: both;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-fill-mode: both
+}
+
+.animatedFadeInUp {
+    opacity: 0
+}
+
+.fadeInUp {
+    opacity: 0;
+    animation-name: fadeInUp;
+    -webkit-animation-name: fadeInUp;
 }
 
 </style>
