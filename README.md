@@ -20,6 +20,8 @@
 
 https://animate.style/
 
+https://www.youtube.com/watch?v=hnf-bIsZnVQ
+
 ```sh
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 ```
