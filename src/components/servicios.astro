@@ -14,9 +14,9 @@ import '@fontsource-variable/open-sans';
 
     <hr class="divider">
 
-    <h1 class="animate-fadeInUp text-center py-12 text-4xl lg:text-5xl font-semibold">Nuestros servicios</h1>
+    <h1 class="titulo_servicio text-center py-12 text-4xl lg:text-5xl font-semibold">Nuestros servicios</h1>
 
-    <div class="contenedor">
+    <div class="contenedor1 contenedor">
       <img loading="lazy" class="imagenFondo" alt="" src="https://webtest832.wordpress.com/wp-content/uploads/2024/05/download-8.gif" data-object-fit="cover">
       <div class="centrado text-4xl lg:text-6xl">Videovigilancia</div>
         <a class="botonServicio rounded-full" href="/videovigilancia">
@@ -24,7 +24,7 @@ import '@fontsource-variable/open-sans';
         </a> 
     </div>
 
-    <div class="contenedor">
+    <div class="contenedor2 contenedor">
       <img loading="lazy" height="400" class="imagenFondo" alt="" src="https://webtest832.wordpress.com/wp-content/uploads/2024/05/download-2.gif" data-object-fit="cover">
       <div class="centrado text-4xl lg:text-6xl">Control de Acceso</div>
         <a class="botonServicio rounded-full" href="/control-acceso">
@@ -32,7 +32,7 @@ import '@fontsource-variable/open-sans';
         </a> 
     </div>
 
-    <div class="contenedor">
+    <div class="contenedor3 contenedor">
       <img loading="lazy" height="400" class="imagenFondo" alt="" src="https://webtest832.wordpress.com/wp-content/uploads/2024/05/download-3-2.gif" data-object-fit="cover">
       <div class="centrado text-5xl lg:text-6xl">IoT y automatización</div>
         <a class="botonServicio rounded-full" href="/iot-automatizacion">
@@ -40,7 +40,7 @@ import '@fontsource-variable/open-sans';
         </a> 
     </div>
 
-    <div class="contenedor">
+    <div class="contenedor4 contenedor">
       <img loading="lazy" height="400" class="imagenFondo" alt="" src="https://webtest832.wordpress.com/wp-content/uploads/2024/05/download-7.gif" data-object-fit="cover">
       <div class="centrado text-4xl lg:text-6xl">Sistemas de detección de incendio</div>
         <a class="botonServicio rounded-full" href="/deteccion-incendio">
@@ -68,6 +68,16 @@ import '@fontsource-variable/open-sans';
 
 <!-----------------------------------------BODY MAIN---------------------------------------------->
     </main>
+
+    <!-- SCRIPT JQUERY CDN -->	
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+        
+    <!-- SCRIPT WAYPOINTS CDN -->	
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js" integrity="sha512-ZKNVEa7gi0Dz4Rq9jXcySgcPiK+5f01CqW+ZoKLLKr9VMXuCsw3RjWiv8ZpIOa0hxO79np7Ec8DDWALM0bDOaQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- SCRIPT SCROLL -->	
+    <script src="../js/scroll.js"></script>
+
 </body>
 </html>
 
@@ -117,4 +127,15 @@ import '@fontsource-variable/open-sans';
     padding: 18px;
     font-weight: bold;
 }
+
+
+/************ ESTILOS PARA ANIMACIÓN ***********/
+.logo_header, .titulo_servicio, .contenedor{
+    opacity: 0;
+}
+
+.logo_header.animate__animated, .titulo_servicio.animate__animated,.contenedor.animate__animated {
+    opacity: 1;
+}
+
 </style>

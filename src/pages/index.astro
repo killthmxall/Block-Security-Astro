@@ -7,7 +7,6 @@ import VistaClientes from "../components/clientes.astro"
 import FormContacto from "../components/form-contacto.astro"
 import Footer from "../components/footer.astro"
 import NavMain from "../components/navbar-main.astro"
-
 ---
 
 <html lang="en">
@@ -27,7 +26,7 @@ import NavMain from "../components/navbar-main.astro"
 		<!-- ICONS -->
 		<link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet"/>
 
-        <!-- ANIMATIONS -->
+        <!-- ANIMATE CSS -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -40,17 +39,17 @@ import NavMain from "../components/navbar-main.astro"
         <!------ SCRIPT ANIMACION DE INICIO -------
         <div class="intro ">
             <h1 class="logo-header text-center">
-                <span class="logo text-5xl lg:text-5xl md:text-5xl sm:text-2xl font-bold">BLOCK</span>
-                <span class="logo text-5xl lg:text-5xl md:text-5xl sm:text-2xl font-bold">SECURITY</span>
-                <br>
                 <div class="flex items-center justify-center">
                     <img class="animate__animated animate__flip h-64 w-64 object-contain" src="../../public/images/short-logo.png" alt="">
                 </div>
+                <br>
+                <span class="logo text-5xl lg:text-5xl md:text-5xl sm:text-2xl">BLOCK</span>
+                <span class="logo text-5xl lg:text-5xl md:text-5xl sm:text-2xl">SECURITY®</span>
             </h1>
         </div>
         
 		
-		<script src="./intro-app.js"></script>
+		<script src="../js/intro-app.js"></script>
         !----------------------------------------->
 
 		<NavMain client:load/>
@@ -59,8 +58,19 @@ import NavMain from "../components/navbar-main.astro"
 		<VistaClientes client:load/>
 		<FormContacto client:load/>
 		<Footer client:load>
+
 		<!-- SCRIPT FLOWBITE -->	
 		<script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.js"></script>
+
+		<!-- SCRIPT JQUERY CDN -->	
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+        
+        <!-- SCRIPT WAYPOINTS CDN -->	
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js" integrity="sha512-ZKNVEa7gi0Dz4Rq9jXcySgcPiK+5f01CqW+ZoKLLKr9VMXuCsw3RjWiv8ZpIOa0hxO79np7Ec8DDWALM0bDOaQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        
+        <!-- SCRIPT SCROLL -->	
+         <script src="../js/scroll.js"></script>
+
 
 	</body>
 </html>
@@ -72,7 +82,6 @@ import NavMain from "../components/navbar-main.astro"
     padding: 0;
     box-sizing: border-box;
     font-weight: 300;
-    font-style: normal;
 }
 
 header {
@@ -111,11 +120,11 @@ header h4 {
 }
 
 .logo {
-    font-family: 'Outfit', sans-serif;
     position: relative;
     display: inline-block;
     bottom: -20px;
     opacity: 0;
+    letter-spacing: 6px;
 }
 
 .logo.active {
