@@ -1,22 +1,22 @@
-# TAILWIND
+## Tailwind
 
 ```sh
 <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
 ```
 
-# FLOWBITE
+## Flowbite
 
 ```sh
 <link href="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.css" rel="stylesheet" />
 ```
 
-# ICONS
+## Icons
 
 ```sh
 <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet"/>
 ```
 
-# Animaciones
+## Animaciones
 
 https://animate.style/
 
