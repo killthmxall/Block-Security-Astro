@@ -1,28 +1,28 @@
 # TAILWIND
 
-'''
+```sh
 <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
-'''
+```
 
 # FLOWBITE
 
-'''
+```sh
 <link href="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.css" rel="stylesheet" />
-'''
+```
 
 # ICONS
 
-'''
+```sh
 <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet"/>
-'''
+```
 
 # Animaciones
 
 https://animate.style/
 
-'''
+```sh
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
-'''
+```
 
 # Iniciar Astro
 
