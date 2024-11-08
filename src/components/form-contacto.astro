@@ -14,7 +14,7 @@ import '@fontsource-variable/open-sans';
 
     <hr class="divider">
 
-    <h1 class="text-center py-14 text-3xl lg:text-4xl">¡Obtenga un asesoramiento hoy!</h1>
+    <h1 class="titulo_form text-center text-gray-600 py-14 text-3xl lg:text-4xl">¡Obtenga un asesoramiento hoy!</h1>
 
     <div class="form1 w-screen">
         <form id="formContact" onsubmit="return enviarFormulario(event)">
@@ -92,6 +92,15 @@ form {
     font-weight: bold;
     border: none;
     cursor: pointer;
+}
+
+/************ ESTILOS PARA ANIMACIÓN ***********/
+.form1, .titulo_form{
+    opacity: 0;
+}
+
+.form1.animate__animated, .titulo_form.animate__animated{
+    opacity: 1;
 }
 
 </style>
