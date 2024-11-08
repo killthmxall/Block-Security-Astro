@@ -30,8 +30,6 @@ import NavMain from "../components/navbar-main.astro"
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-
 	</head>
 
 	<body>
@@ -47,9 +45,6 @@ import NavMain from "../components/navbar-main.astro"
                 <span class="logo text-5xl lg:text-5xl md:text-5xl sm:text-2xl">SECURITY®</span>
             </h1>
         </div>
-        
-		
-		<script src="../js/intro-app.js"></script>
         <!----------------------------------------->
 
 		<NavMain client:load/>
@@ -69,8 +64,10 @@ import NavMain from "../components/navbar-main.astro"
         <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js" integrity="sha512-ZKNVEa7gi0Dz4Rq9jXcySgcPiK+5f01CqW+ZoKLLKr9VMXuCsw3RjWiv8ZpIOa0hxO79np7Ec8DDWALM0bDOaQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
         
         <!-- SCRIPT SCROLL -->	
-         <script src="../js/scroll.js"></script>
+        <script src="../js/scroll.js"></script>
 
+        <!-- SCRIPT INTRO -->
+		<script src="../js/intro-app.js"></script>
 
 	</body>
 </html>
@@ -125,6 +122,7 @@ header h4 {
     bottom: -20px;
     opacity: 0;
     letter-spacing: 6px;
+    font-weight: 600;
 }
 
 .logo.active {

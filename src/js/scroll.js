@@ -42,9 +42,23 @@ $(document).ready(function(){
         {offset: "80%"}
     );
 
+    $(".data_center").waypoint(
+        function() {
+            $(".data_center").addClass("animate__animated animate__fadeIn")
+        }, 
+        {offset: "80%"}
+    );
+
+    $(".diseno_consultoria").waypoint(
+        function() {
+            $(".diseno_consultoria").addClass("animate__animated animate__fadeIn")
+        }, 
+        {offset: "80%"}
+    );
+
     $(".titulo_clientes").waypoint(
         function() {
-            $(".titulo_clientes").addClass("animate__animated animate__fadeIn")
+            $(".titulo_clientes").addClass("animate__animated animate__fadeInUp")
         }, 
         {offset: "80%"}
     );
@@ -92,4 +106,28 @@ $(document).ready(function(){
         }, 
         {offset: "80%"}
     );
+
+    /*------------------------------LAYOUT CABLEADO--------------------------------------*/
+    $(".video_layout").waypoint(
+        function() {
+            $(".video_layout").addClass("animate__animated animate__fadeInUp")
+        }, 
+        {offset: "80%"}
+    );
+
+    $(".subtitulo_layout").waypoint(
+        function() {
+            $(".subtitulo_layout").addClass("animate__animated animate__fadeInUp")
+        }, 
+        {offset: "80%"}
+    );
+
+    $(".descripcion_layout").waypoint(
+        function() {
+            $(".descripcion_layout").addClass("animate__animated animate__fadeInUp")
+        }, 
+        {offset: "80%"}
+    );
+
+
 })
