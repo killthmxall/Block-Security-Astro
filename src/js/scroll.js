@@ -129,5 +129,61 @@ $(document).ready(function(){
         {offset: "80%"}
     );
 
+    /*------------------------------LAYOUT ABOUT--------------------------------------*/
+    $(".titulo_vision").waypoint(
+        function() {
+            $(".titulo_vision").addClass("animate__animated animate__fadeInUp")
+        }, 
+        {offset: "80%"}
+    );
+
+    $(".subtitulo_vision").waypoint(
+        function() {
+            $(".subtitulo_vision").addClass("animate__animated animate__fadeInUp")
+        }, 
+        {offset: "80%"}
+    );
+
+    $(".img_vision").waypoint(
+        function() {
+            $(".img_vision").addClass("animate__animated animate__fadeInUp")
+        }, 
+        {offset: "80%"}
+    );
+    
+    $(".titulo_equipo").waypoint(
+        function() {
+            $(".titulo_equipo").addClass("animate__animated animate__fadeInUp")
+        }, 
+        {offset: "80%"}
+    );
+
+    $(".subtitulo_equipo").waypoint(
+        function() {
+            $(".subtitulo_equipo").addClass("animate__animated animate__fadeInUp")
+        }, 
+        {offset: "80%"}
+    );
+
+    // Itera desde el logo 1 hasta el logo 32
+    for (let i = 1; i <= 8; i++) {
+        $(`.equipo_${i}`).waypoint(
+            function() {
+                $(`.equipo_${i}`).addClass("animate__animated animate__fadeInUp");
+            },
+            { offset: "80%" }
+        );
+    }
+
+    // Itera desde el logo 1 hasta el logo 32
+    for (let i = 1; i <= 5; i++) {
+        $(`.acronimo_${i}`).waypoint(
+            function() {
+                $(`.acronimo_${i}`).addClass("animate__animated animate__fadeInUp");
+            },
+            { offset: "80%" }
+        );
+    }
+    
 
 })
