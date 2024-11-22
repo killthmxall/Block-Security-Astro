@@ -110,7 +110,7 @@ $(document).ready(function(){
     /*------------------------------LAYOUT CABLEADO--------------------------------------*/
     $(".video_layout").waypoint(
         function() {
-            $(".video_layout").addClass("animate__animated animate__fadeInUp")
+            $(".video_layout").addClass("animate__animated animate__zoomIn")
         }, 
         {offset: "80%"}
     );
@@ -183,6 +183,29 @@ $(document).ready(function(){
             },
             { offset: "80%" }
         );
+    }
+
+    // Autoplay del video
+    // Itera desde el logo 1 hasta el logo 32
+    for (let i = 1; i <= 6; i++) {
+        $(`[data-modal-target="default-modal${i}"]`).click(function() {
+            var video = $(`#default-modal${i}`).find('video')[0]; // Encuentra el elemento de video dentro del modal
+            $(`#default-modal${i}`).removeClass('hidden'); // Muestra el modal
+            video.play(); // Reproduce el video automáticamente
+        });
+    }
+
+    // Stop del video
+    // Itera desde el logo 1 hasta el logo 32
+    for (let i = 1; i <= 6; i++) {
+        $(`#default-modal${i}`).click(function(e) {
+            if ($(e.target).is(`#default-modal${i}`)) {
+                var video = $(`#default-modal${i}`).find('video')[0]; // Encuentra el elemento de video
+                video.pause(); // Pausa el video
+                video.currentTime = 0; // Vuelve al inicio del video
+                $(`#default-modal${i}`).addClass('hidden'); // Oculta el modal
+            }
+        });
     }
     
 

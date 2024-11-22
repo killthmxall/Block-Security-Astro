@@ -21,48 +21,77 @@ import LayoutControlAcceso from "../layouts/servicios-layout.astro"
     </div>
 
     <!--------------------------------------- VIDEOS APLICATIVOS --------------------------------------------->
-
     <div slot="videos" class="text-center">
-        <video class="video_layout w-full h-auto mb-4" controls>
-            <source src="https://res.cloudinary.com/df5olfhrq/video/upload/v1730147306/qx46eoqro50ciylkjurm.mp4" type="video/mp4"/>
-            Your browser does not support the video tag.
-        </video>
-        
+        <button data-modal-target="default-modal1" data-modal-toggle="default-modal1" class="w-20 h-20 border-8 rounded-full text-center border-orange-400 hover:border-orange-500 transition duration-400 ease-in-out lg:mr-4 " type="button">
+            <i class="fa fa-play fa-2x"></i>
+        </button>
         <h2 class="subtitulo_layout text-xl font-semibold">
             Wireless Sensor
         </h2>
         <p class="descripcion_layout text-justify">
             Swift Sensors ofrece más de 30 tipos de sensores inalámbricos que monitorean equipos, ambiente y energía.
         </p>
+        <!-- Main modal -->
+        <div id="default-modal1" tabindex="-1" aria-hidden="true" class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-[calc(100%-1rem)] max-h-full">
+            <div class="relative p-4 w-full max-w-5xl max-h-full">
+                <!-- Modal content -->
+                <div class="relative">
+                    <video class="video_layout w-full h-auto mb-4 rounded-3xl" controls>
+                        <source src="https://res.cloudinary.com/df5olfhrq/video/upload/v1730147306/qx46eoqro50ciylkjurm.mp4" type="video/mp4"/>
+                    </video>
+                </div>
+                
+            </div>
+        </div>
     </div>
 
     <div slot="videos" class="text-center">
-        <video class="video_layout w-full h-auto mb-4" controls>
-            <source src="https://res.cloudinary.com/df5olfhrq/video/upload/v1730147488/madngsgdn8hpgp2dcumx.mp4" type="video/mp4"/>
-            Your browser does not support the video tag.
-        </video>
+        <button data-modal-target="default-modal2" data-modal-toggle="default-modal2" class="w-20 h-20 border-8 rounded-full text-center border-orange-400 hover:border-orange-500 transition duration-400 ease-in-out lg:mr-4 " type="button">
+            <i class="fa fa-play fa-2x"></i>
+        </button>
         <h2 class="subtitulo_layout text-xl font-semibold">
             Omniflow
         </h2>
         <p class="descripcion_layout text-justify">
             Infraestructura para proporcionar las futuras aplicaciones de IoT mientras generamos su propia energía.
         </p>
+        <!-- Main modal -->
+        <div id="default-modal2" tabindex="-1" aria-hidden="true" class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-[calc(100%-1rem)] max-h-full">
+            <div class="relative p-4 w-full max-w-5xl max-h-full">
+                <!-- Modal content -->
+                <div class="relative">
+                    <video class="video_layout w-full h-auto mb-4 rounded-3xl" controls>
+                        <source src="https://res.cloudinary.com/df5olfhrq/video/upload/v1730147488/madngsgdn8hpgp2dcumx.mp4" type="video/mp4"/>
+                    </video>
+                </div>
+                
+            </div>
+        </div>
     </div>
 
     <div slot="videos" class="text-center">
-        <video class="video_layout w-full h-auto mb-4" controls>
-            <source src="https://res.cloudinary.com/df5olfhrq/video/upload/v1730147619/c67usshcbdew8sbkhjpz.mp4" type="video/mp4"/>
-            Your browser does not support the video tag.
-        </video>
+        <button data-modal-target="default-modal3" data-modal-toggle="default-modal3" class="w-20 h-20 border-8 rounded-full text-center border-orange-400 hover:border-orange-500 transition duration-400 ease-in-out lg:mr-4 " type="button">
+            <i class="fa fa-play fa-2x"></i>
+        </button>
         <h2 class="subtitulo_layout text-xl font-semibold">
             Automated Logic
         </h2>
         <p class="descripcion_layout text-justify">
             Sistemas de automatización para edificios y negocios, optimizando el control de energía y el confort.
         </p>
+        <!-- Main modal -->
+        <div id="default-modal3" tabindex="-1" aria-hidden="true" class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-[calc(100%-1rem)] max-h-full">
+            <div class="relative p-4 w-full max-w-5xl max-h-full">
+                <!-- Modal content -->
+                <div class="relative">
+                    <video class="video_layout w-full h-auto mb-4 rounded-3xl" controls>
+                        <source src="https://res.cloudinary.com/df5olfhrq/video/upload/v1730147619/c67usshcbdew8sbkhjpz.mp4" type="video/mp4"/>
+                    </video>
+                </div>
+                
+            </div>
+        </div>
     </div>
-
-
 
     <a slot="navegacion" class="w-auto font-bold text-white bg-orange-400 py-2.5 px-5 rounded-full hover:bg-orange-500 transition duration-400 ease-in-out lg:mr-4" href="/diseno-consultoria">
         <i class="ri-arrow-left-line"></i>

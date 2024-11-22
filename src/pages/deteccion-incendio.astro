@@ -21,47 +21,77 @@ import LayoutDeteccion from "../layouts/servicios-layout.astro"
     </div>
 
     <!--------------------------------------- VIDEOS APLICATIVOS --------------------------------------------->
-
     <div slot="videos" class="text-center">
-        <video class="video_layout w-full h-auto mb-4" controls>
-            <source src="https://res.cloudinary.com/df5olfhrq/video/upload/v1730147797/mqf365tucrgqnzsoiaa6.mp4" type="video/mp4"/>
-            Your browser does not support the video tag.
-        </video>
-        
+        <button data-modal-target="default-modal1" data-modal-toggle="default-modal1" class="w-20 h-20 border-8 rounded-full text-center border-orange-400 hover:border-orange-500 transition duration-400 ease-in-out lg:mr-4 " type="button">
+            <i class="fa fa-play fa-2x"></i>
+        </button>
         <h2 class="subtitulo_layout text-xl font-semibold">
             EST 4
         </h2>
         <p class="descripcion_layout text-justify">
             El sistema EST4 de Edwards es una avanzada plataforma de detección y comunicación de incendios, flexible, segura y compatible con actualizaciones.
         </p>
+        <!-- Main modal -->
+        <div id="default-modal1" tabindex="-1" aria-hidden="true" class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-[calc(100%-1rem)] max-h-full">
+            <div class="relative p-4 w-full max-w-5xl max-h-full">
+                <!-- Modal content -->
+                <div class="relative">
+                    <video class="video_layout w-full h-auto mb-4 rounded-3xl" controls>
+                        <source src="https://res.cloudinary.com/df5olfhrq/video/upload/v1730147797/mqf365tucrgqnzsoiaa6.mp4" type="video/mp4"/>
+                    </video>
+                </div>
+                
+            </div>
+        </div>
     </div>
 
     <div slot="videos" class="text-center">
-        <video class="video_layout w-full h-auto mb-4" controls>
-            <source src="https://res.cloudinary.com/df5olfhrq/video/upload/v1730147967/ksakegkxveh7njt5foli.mp4" type="video/mp4"/>
-            Your browser does not support the video tag.
-        </video>
+        <button data-modal-target="default-modal2" data-modal-toggle="default-modal2" class="w-20 h-20 border-8 rounded-full text-center border-orange-400 hover:border-orange-500 transition duration-400 ease-in-out lg:mr-4 " type="button">
+            <i class="fa fa-play fa-2x"></i>
+        </button>
         <h2 class="subtitulo_layout text-xl font-semibold">
             Signature Optica
         </h2>
         <p class="descripcion_layout text-justify">
             El Signature Optica de Edwards reduce falsas alarmas diferenciando partículas molestas de amenazas reales.
         </p>
+        <!-- Main modal -->
+        <div id="default-modal2" tabindex="-1" aria-hidden="true" class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-[calc(100%-1rem)] max-h-full">
+            <div class="relative p-4 w-full max-w-5xl max-h-full">
+                <!-- Modal content -->
+                <div class="relative">
+                    <video class="video_layout w-full h-auto mb-4 rounded-3xl" controls>
+                        <source src="https://res.cloudinary.com/df5olfhrq/video/upload/v1730147967/ksakegkxveh7njt5foli.mp4" type="video/mp4"/>
+                    </video>
+                </div>
+                
+            </div>
+        </div>
     </div>
 
     <div slot="videos" class="text-center">
-        <video class="video_layout w-full h-auto mb-4" controls>
-            <source src="https://res.cloudinary.com/df5olfhrq/video/upload/v1730148017/giq89hsk4uztdnqdlub4.mp4" type="video/mp4"/>
-            Your browser does not support the video tag.
-        </video>
+        <button data-modal-target="default-modal3" data-modal-toggle="default-modal3" class="w-20 h-20 border-8 rounded-full text-center border-orange-400 hover:border-orange-500 transition duration-400 ease-in-out lg:mr-4 " type="button">
+            <i class="fa fa-play fa-2x"></i>
+        </button>
         <h2 class="subtitulo_layout text-xl font-semibold">
             Genesis LED Outdoor
         </h2>
         <p class="descripcion_layout text-justify">
             Luz LED resistente, adaptable, segura. Ideal para climas hostiles y húmedos. Lista para cualquier aplicación de seguridad humana.
         </p>
+        <!-- Main modal -->
+        <div id="default-modal3" tabindex="-1" aria-hidden="true" class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-[calc(100%-1rem)] max-h-full">
+            <div class="relative p-4 w-full max-w-5xl max-h-full">
+                <!-- Modal content -->
+                <div class="relative">
+                    <video class="video_layout w-full h-auto mb-4 rounded-3xl" controls>
+                        <source src="https://res.cloudinary.com/df5olfhrq/video/upload/v1730148017/giq89hsk4uztdnqdlub4.mp4" type="video/mp4"/>
+                    </video>
+                </div>
+                
+            </div>
+        </div>
     </div>
-
 
     <a slot="navegacion" class="w-auto font-bold text-white bg-orange-400 py-2.5 px-5 rounded-full hover:bg-orange-500 transition duration-400 ease-in-out lg:mr-4" href="/data-center">
         <i class="ri-arrow-left-line"></i>
