@@ -1,12 +1,10 @@
 ---
-import VistaPrincipal from "../pages/main.astro"
-import Gallery from "../components/Gallery.astro"
-import VistaVideovigilancia from "../pages/videovigilancia.astro"
-import VistaServicios from "../components/servicios.astro"
-import VistaClientes from "../components/clientes.astro"
-import FormContacto from "../components/form-contacto.astro"
-import Footer from "../components/footer.astro"
-import NavMain from "../components/navbar-main.astro"
+import VistaPrincipal from "./main.astro";
+import VistaServicios from "./servicios.astro";
+import VistaClientes from "../components/clientes.astro";
+import FormContacto from "../components/form-contacto.astro";
+import Footer from "../components/footer.astro";
+import NavMain from "../components/navbar.astro";
 ---
 
 <html lang="en">
@@ -47,12 +45,12 @@ import NavMain from "../components/navbar-main.astro"
         </div>
         <!----------------------------------------->
 
-		<NavMain client:load/>
-		<VistaPrincipal client:load />
-		<VistaServicios client:load/>
-		<VistaClientes client:load/>
-		<FormContacto client:load/>
-		<Footer client:load>
+		<NavMain/>
+		<VistaPrincipal/>
+		<VistaServicios/>
+		<VistaClientes/>
+		<FormContacto/>
+		<Footer>
 
 		<!-- SCRIPT FLOWBITE -->	
 		<script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.js"></script>
@@ -67,7 +65,7 @@ import NavMain from "../components/navbar-main.astro"
         <script src="../js/scroll.js"></script>
 
         <!-- SCRIPT INTRO -->
-		<script src="../js/intro-app.js"></script>
+		<script src="../js/intro.js"></script>
 
 	</body>
 </html>
